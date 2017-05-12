@@ -1,0 +1,166 @@
+body {
+  background: black;
+}
+
+.interface-container {
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  transition: all 0.2s ease-in-out;
+  background: -webkit-radial-gradient(top left, ellipse cover, #013eaa 0%, #00208c 100%);
+}
+.interface-container .menus-container {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(0, 0);
+}
+.interface-container .menus-container.navbar-focused {
+  transform: translate(0, 730px);
+}
+.interface-container .menus-container.navbar-focused .content-launcher-container {
+  margin-top: 100px;
+}
+.interface-container .menus-container.navbar-focused .nav-icons-container {
+  opacity: 1;
+  white-space: nowrap;
+}
+.interface-container .menus-container.navbar-focused .nav-icons-container ul li.nav-content-container {
+  margin-right: 89px;
+}
+.interface-container .menus-container.actual-content-focused {
+  transform: translate(0, -500px);
+}
+.interface-container .navbar {
+  position: relative;
+  width: 1900px;
+  opacity: 0.5;
+  margin: 10px;
+  height: 100px;
+  background: black;
+}
+.interface-container .navbar .nav-icons-container {
+  position: relative;
+  opacity: 0;
+  margin: 5px;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+.interface-container .navbar .nav-icons-container ul {
+  background: fuschia;
+  padding: 10px;
+  margin-right: 10px;
+}
+.interface-container .navbar .nav-icons-container ul li.nav-content-container {
+  vertical-align: top;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: inline-block;
+  margin: 3px 10px 0 0px;
+  top: 0;
+  width: 70px;
+  height: 73px;
+  background: transparent;
+}
+.interface-container .navbar .nav-icons-container ul li.nav-content-container:focus {
+  width: 73px;
+  height: 73px;
+  padding: 4px;
+  outline: 3px solid white;
+}
+.interface-container .navbar .nav-icons-container ul li.nav-content-container:focus .content-object {
+  width: 73px;
+  height: 73px;
+}
+.interface-container .navbar .nav-icons-container ul li.nav-content-container .content-object {
+  transition: all 0.2s ease-in-out;
+  width: 70px;
+  height: 70px;
+  background: cornflowerblue;
+}
+.interface-container .content-launcher-container {
+  position: relative;
+  margin: 10px;
+  width: 5000px;
+  height: 300px;
+  transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.4);
+  transform: translate3d(0, 0, 0);
+}
+.interface-container .content-launcher-container ul {
+  padding: 3px;
+}
+.interface-container .content-launcher-container ul li.content-container {
+  vertical-align: top;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  background: transparent;
+}
+.interface-container .content-launcher-container ul li.content-container:focus {
+  width: 220px;
+  height: 260px;
+  padding: 4px;
+  outline: 5px solid white;
+}
+.interface-container .content-launcher-container ul li.content-container:focus .content-object {
+  width: 220px;
+  height: 220px;
+}
+.interface-container .content-launcher-container ul li.content-container .content-object {
+  transition: all 0.2s ease-in-out;
+  width: 120px;
+  height: 120px;
+  background: aqua;
+}
+.interface-container .actual-content-section {
+  position: relative;
+  margin: 10px;
+  width: 5000px;
+  height: 1080px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.interface-container .actual-content-section.actual-content-focused {
+  opacity: 1;
+  transform: translate(0, -455px);
+}
+.interface-container .actual-content-section ul {
+  background: crimson;
+  padding: 3px;
+}
+.interface-container .actual-content-section ul li.actual-content-container {
+  vertical-align: top;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  margin: 10px;
+  width: 120px;
+  height: 1080px;
+  background: transparent;
+}
+.interface-container .actual-content-section ul li.actual-content-container .actual-content-object {
+  transition: all 0.2s ease-in-out;
+  width: 920px;
+  height: 820px;
+  margin-top: 200px;
+  background: aqua;
+}
+.interface-container .actual-content-section ul li.actual-content-container:focus {
+  width: 220px;
+  height: 260px;
+  padding: 4px;
+  outline: 5px solid white;
+}
+.interface-container .actual-content-section ul li.actual-content-container:focus .actual-content-object {
+  padding: 4px;
+  outline: solid 5px white;
+}
